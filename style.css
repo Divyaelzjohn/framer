@@ -43,11 +43,8 @@ body{
     top: 0;
     z-index: 10;
 }
-.dis_cont{
-    display: contents;
-}
 .h_mrg{
-    /* 33v7o */
+    display: contents;
     backdrop-filter: blur(5px) saturate(180%) brightness(150%) blur(10px);
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
@@ -71,29 +68,18 @@ body{
     flex: 1 0 0px;
     justify-content: space-between;
     max-width: 1200px;
-    padding: 0;
     width: 1px;
     z-index: 10;
     align-items: center;
     display: flex;
     flex-wrap: nowrap;
     overflow: visible;
-}
-.h_padding{
     opacity: 1;
     gap: unset;
-    height: 64px;
-    justify-content: space-between;
     order: 0;
     padding: 0 0 0 20px;
-    align-items: center;
-    display: flex;
-    flex: 1 0 0px;
     flex-direction: row;
-    flex-wrap: nowrap;
-    overflow: visible;
     position: relative;
-    width: 1px;
 }
 .framer{
     opacity: 1;
@@ -101,7 +87,6 @@ body{
     height: 26px;
     position: relative;
     width: auto;
-    opacity: 1; 
     box-sizing: border-box;  
 }
 .frm_flex{
@@ -142,7 +127,7 @@ body{
     white-space: pre;
     width: auto;
 }
-.text{
+.framer_txt p{
     font-style: normal;
     font-weight: 400;
     color: rgb(255, 255, 255);
@@ -162,7 +147,7 @@ body{
     position: relative;
     box-sizing: border-box;
   }
-  .log_mrg, .login_mrg, .sign_mrg {
+  .login , .Login{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -175,13 +160,7 @@ body{
     overflow: visible;
     opacity: 1;
   }
-  .login_mrg, .sign_mrg {
-    justify-content: flex-start;
-    gap: 8px;
-    width: min-content;
-    cursor: pointer;
-  }
-  .Login, .Login1 {
+  .Login{
     flex: 0 0 auto;
     width: auto;
     height: auto;
@@ -189,6 +168,26 @@ body{
     box-sizing: border-box;
     will-change: transform;
     opacity: 1;
+    justify-content: flex-start;
+    gap: 8px;
+    width: min-content;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    /* opacity: 0.6; */
+    white-space: pre;
+    cursor: pointer;
+    position: relative;
+    font-family: 'font3';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: -0.15px;
+    margin: 0;
+    padding: 0;
   }
   .Login2, .sign {
     display: flex;
@@ -213,16 +212,6 @@ body{
     height: 28px;
     width: 72.28px;
   }
-  .Login3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    /* opacity: 0.6; */
-    white-space: pre;
-    cursor: pointer;
-    position: relative;
-  } 
   .Login4, .sign_txt {
     font-family: 'font3';
     font-style: normal;
@@ -247,8 +236,6 @@ body{
     height: auto;
     position: relative;
     width: auto;
-  }
-  .menu1{
     cursor: pointer;
     height: 70px;
     overflow: hidden;
@@ -357,7 +344,7 @@ body{
     mask-position: center;
     mask-repeat: no-repeat;
   }
-.star_txt{
+.newai{
   outline: none;
   display: flex;
   flex-direction: column;
@@ -369,8 +356,6 @@ body{
   position: relative;
   white-space: pre;
   width: auto;
-}
-.newai{
   font-family: 'font3';
   font-style: normal;
   font-weight: 500;
@@ -384,7 +369,7 @@ body{
   padding: 0px;
   opacity: 0.9;
 }
-.just, .seeit {
+.just, .see_mrg {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -414,7 +399,6 @@ body{
   text-align: center;
 }
 .just_txt h1 {
-  display: inline;
   font-family: 'font1';
   font-style: normal;
   font-weight: 400;
@@ -424,8 +408,9 @@ body{
   line-height: 46.2px;
   margin: 0;
   padding: 0;
+  
 }
-.h11, .pp {
+.just_txt h1, .website p{
   display: inline;
   opacity: 1;
   will-change: transform;
@@ -455,6 +440,7 @@ body{
   padding: 0;
   text-align: center;
 }
+
 .see_mrg{
   gap: 5px;
   align-items: center;
@@ -468,18 +454,15 @@ body{
   padding: 0;
   position: relative;
   width: min-content;
-}
-.see_mrg1{
   opacity: 1;
   transform: none;
   will-change: transform;
   flex: none;
   height: auto;
-  position: relative;
   width: auto;
   z-index: 2;
 }
-.mrg2{
+.see_mrg1{
   backdrop-filter: blur(0px);
   background-color: rgb(255, 255, 255);
   border-radius: 100px;
@@ -498,23 +481,18 @@ body{
   text-decoration: none;
   width: min-content;
   will-change: auto;
-}
-.mrg3{
   outline: none;
-  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   flex-shrink: 0;
   transform: none;
-  opacity: 1;
   flex: none;
   height: auto;
-  position: relative;
   user-select: none;
   white-space: pre;
   width: auto;
 }
-.see{
+.see_mrg1 p{
   font-family: 'font1';
   font-style: normal;
   font-weight: 400;
@@ -544,8 +522,6 @@ body{
   position: relative;
   width: 100%;
   box-sizing: border-box;
-}
-.canvas{
   opacity: 1;
   transform: none;
   transform-origin: 10% 50% 0px;
@@ -554,9 +530,6 @@ body{
   order: 1;
   aspect-ratio: 1.3729977116704806 / 1;
   flex: none;
-  overflow: visible;
-  position: relative;
-  width: 100%;
   z-index: 1;
 }
 .canvas1{
@@ -585,14 +558,12 @@ body{
   top: 156.125px;
   width: 585px; width: 585px;
 }
-.bg_img1{
+.bg_img img{
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-}
-.bg_img1 img{
   display: block;
   width: 100%;
   height: 100%;
@@ -614,13 +585,11 @@ body{
   position: relative;
   width: 100%;
 }
-.miro{
+.miro_padng{
   width: 100%;
   flex: none;
   height: auto;
   position: relative;
-}
-.miro_padng{
   width: 100%;
   opacity: 1;
   gap: 20px;
@@ -634,8 +603,6 @@ body{
   overflow: hidden;
   padding: 20px 0;
   position: relative;
-}
-.miro_only{
   opacity: 1;
   flex: none;
   height: 34px;
@@ -658,14 +625,15 @@ body{
 }
 @keyframes slideLeft {
   0%{
-    transform: translateX(0);
+    transform: translateX(0px);
   }
   100% {
-    transform: translateX(-613.18px);
+    transform: translateX(-889px);
   }
 }
 .style ul{
-  animation: slideLeft loop 20s infinite linear forwards;
+  animation: slideLeft 25s infinite linear forwards;
+  animation-iteration-count: infinite;
   display: flex;
   width: 100%;
   height: 100%;
